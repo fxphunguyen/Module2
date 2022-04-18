@@ -2,11 +2,11 @@ package Lop_Doituong;
 
 public class Insertion_Sort {
     public static void main(String args[]) {
-        int arr[] = {25, 13, 4, 6, 3, 21, 8, 10};
+        int arr[] = {2, 5, 15, 17, 13};
         System.out.println("Mảng ban đầu:" );
         printArray(arr);
         Insertion_Sort ob = new Insertion_Sort();
-        ob.sort(arr);
+        ob.insertionSort(arr);
         System.out.println("Mảng sau khi sắp xếp:");
         printArray(arr);
     }
@@ -27,6 +27,17 @@ public class Insertion_Sort {
         }
     }
 
+    void insertionSort(int arr[]){
+        for (int i = 1; i < arr.length; i++) {
+            int temp = arr[i];
+            for(int j=i-1; j>=0; j--){
+                if(arr[j]>temp){
+                    arr[j+1]= arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
     // In các phần tử của mảng
     static void printArray(int arr[]) {
         for (int i = 0; i < arr.length; ++i)
