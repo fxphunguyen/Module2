@@ -8,6 +8,7 @@ public class Push_value {
         System.out.println("Mảng ban đầu là: " + Arrays.toString(arr));
         int N = arr.length;
         arr = Arrays.copyOf(arr, N + 1);
+        System.out.println("Nhập phần tử mới: ");
         arr[N] = "7";
         System.out.println("Mảng khi được thêm:\n" + Arrays.toString(arr));
     }

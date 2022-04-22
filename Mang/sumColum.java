@@ -33,7 +33,7 @@ public class sumColum {
                 }
             }
         }
-        System.out.println("Tổng" + sum);
+        System.out.println("Tổng  " + sum);
 
     }
 }

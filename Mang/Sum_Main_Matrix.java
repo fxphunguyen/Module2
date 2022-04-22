@@ -6,6 +6,7 @@ public class Sum_Main_Matrix {
     public static void main(String[] args) {
         int n; // bậc thang của ma trận vuông
         int sum = 0;
+        System.out.println("Nhập kích thước của mảng: ");
         Scanner scanner = new Scanner(System.in);
         n = scanner.nextInt();
         int Array[][]= new int[n][n];
