@@ -1,15 +1,16 @@
-package Lop.DoiTuong;
+package Access_Static;
 
-public class Demo {
+public class Student {
     int id;
     String name;
     static String college = "Đại học";
+
 
     static void change() {
         college = "CodeGym";
     }
 
-    Demo(int i, String n) {
+    Student(int i, String n) {
         id = 1;
         name = n;
     }
@@ -19,10 +20,10 @@ public class Demo {
     }
 
     public static void main(String args[]) {
-        Demo.change();
+        Student.change();
 
-        Demo s1 = new Demo(111, "Vinh");
-        Demo s2 = new Demo(222, "Tiến");
+        Student s1 = new Student(111, "Vinh");
+        Student s2 = new Student(222, "Tiến");
         s1.display();
         s2.display();
 
