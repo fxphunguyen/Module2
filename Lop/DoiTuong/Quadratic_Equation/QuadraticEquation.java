@@ -11,7 +11,7 @@ public class QuadraticEquation {
         this.c = c;
     }
     public double getDiscriminant(){
-        return (Math.pow(this.b,2)) - (4 * this.a * this.c);
+        return (Math.pow(this.b,2)) - (4 * a * c);
     }
 
     public double getRoot1() {
