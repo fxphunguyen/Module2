@@ -1,18 +1,16 @@
-package Ke_Thua.Learning_Geometry;
+package Abstract_Interface.Comparable;
 
 public class Shape {
     private String color = "red";
-    protected boolean filled = true;
+    private  boolean filled = true;
 
-    public Shape() {
-
+    Shape() {
     }
 
-    public Shape(String color, boolean filled) {
+    Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
     }
-
 
     public String getColor() {
         return this.color;
