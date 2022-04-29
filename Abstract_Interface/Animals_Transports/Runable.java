@@ -1,4 +1,4 @@
-package Abstract_Interface.Animal_Transport;
+package Abstract_Interface.Animals_Transports;
 
 public interface Runable {
     String howtoRun();

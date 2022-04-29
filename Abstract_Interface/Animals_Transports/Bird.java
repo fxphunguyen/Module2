@@ -1,4 +1,4 @@
-package Abstract_Interface.Animal_Transport;
+package Abstract_Interface.Animals_Transports;
 
 public class Bird extends Animal implements Flyable{
     @Override
