@@ -1,4 +1,4 @@
-package Abstract_Interface.Comparator;
+package Abstract_Interface.Comparators;
 
 public class Shape {
     private String color = "red";
