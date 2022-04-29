@@ -1,4 +1,4 @@
-package Abstract_Interface.Animal_Fruit;
+package Abstract_Interface.Animals_Fruits;
 
 public abstract class Fruit implements Edible {
     @Override

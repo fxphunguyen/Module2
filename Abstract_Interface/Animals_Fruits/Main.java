@@ -1,4 +1,4 @@
-package Abstract_Interface.Animal_Fruit;
+package Abstract_Interface.Animals_Fruits;
 
 public class Main {
     public static void main(String[] args) {
