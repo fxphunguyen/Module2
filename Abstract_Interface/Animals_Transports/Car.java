@@ -10,4 +10,9 @@ public class Car extends Transport implements Runable{
     public String howtoRun() {
         return "Xe chạy 350 Km/h";
     }
+
+    @Override
+    public String runBy() {
+        return "Chạy bằng động cơ";
+    }
 }

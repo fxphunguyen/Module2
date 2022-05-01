@@ -10,4 +10,9 @@ public class Planes extends Transport implements Flyable{
     public String howtoFly() {
         return "Máy bay có thể bay 500 Km/h";
     }
+
+    @Override
+    public String flyBy() {
+        return "Bay bằng động cơ";
+    }
 }

@@ -3,7 +3,7 @@ package Abstract_Interface.Animals_Transports;
 public class Bird extends Animal implements Flyable{
     @Override
     String howtoEat() {
-        return "Chim nướng";
+        return "";
     }
 
     @Override
@@ -14,5 +14,10 @@ public class Bird extends Animal implements Flyable{
     @Override
     public String howtoFly() {
         return "Chim có thể bay";
+    }
+
+    @Override
+    public String flyBy() {
+        return "Chim bay bằng cánh";
     }
 }

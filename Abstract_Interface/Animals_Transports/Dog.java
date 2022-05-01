@@ -3,12 +3,12 @@ package Abstract_Interface.Animals_Transports;
 public class Dog extends Animal implements Barkable,Runable{
     @Override
     String howtoEat() {
-        return "Chó giả cầy";
+        return "";
     }
 
     @Override
     String sleep() {
-        return "Chó không ngủ";
+        return "Chó ngủ 12-14 tiếng mỗi ngày";
     }
 
     @Override
@@ -19,5 +19,10 @@ public class Dog extends Animal implements Barkable,Runable{
     @Override
     public String howtoRun() {
         return "Chó chạy ngoài đồng";
+    }
+
+    @Override
+    public String runBy() {
+        return "Chó chạy bằng chân";
     }
 }

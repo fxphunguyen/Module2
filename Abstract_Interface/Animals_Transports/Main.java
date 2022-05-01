@@ -16,10 +16,12 @@ public class Main {
                 System.out.println(barkable.howtoBark());
                 Runable runable = (Dog) animal;
                 System.out.println(runable.howtoRun());
+                System.out.println(runable.runBy());
             }
             if (animal instanceof Bird){
                 Flyable flyable = (Bird) animal;
                 System.out.println(flyable.howtoFly());
+                System.out.println(flyable.flyBy());
             }
             if (animal instanceof Fish){
                 Swimable swimable = (Fish) animal;
@@ -37,11 +39,13 @@ public class Main {
             if (transport instanceof Car){
                 Runable runable = (Car) transport;
                 System.out.println(runable.howtoRun());
+                System.out.println(runable.runBy());
             }
 
             if (transport instanceof Planes){
                 Flyable flyable = (Planes) transport;
                 System.out.println(flyable.howtoFly());
+                System.out.println(flyable.flyBy());
             }
 
         }
