@@ -1,6 +1,5 @@
 package danh_sach.linkedlist;
 
-import javafx.scene.Node;
 
 public class MyLinkedList {
     private Node head;
