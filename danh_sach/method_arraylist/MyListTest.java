@@ -8,7 +8,7 @@ public class MyListTest {
         listNames.add(1,"ha");
         listNames.add(2,"hu");
         listNames.add(3, "Aaaa");
-        //  listNames.clear();
+        //listNames.clear();
         listNames.printMyList();
         listNames.remove(3);
         listNames.printMyList();

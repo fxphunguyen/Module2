@@ -2,44 +2,44 @@ package stack_queue;
 
 public class Stack {
     private int arr[];
-    private int size;
-    int index = 0;
+    private int capacity;
+    int size = 0;
 
-    public Stack(int size) {
-        this.size = size;
-        arr = new int[size];
+    public Stack(int capacity) {
+        this.capacity = capacity;
+        arr = new int[capacity];
     }
 
     public void push(int element) {
         if (isFull()) {
             throw new StackOverflowError("Stack is full");
         }
-        arr[index] = element;
-        index++;
+        arr[size] = element;
+        size++;
     }
 
     public int pop() throws Exception {
         if (isEmpty()) {
             throw new Exception("Stack is null");
         }
-        return arr[--index];
+        return arr[--size];
     }
 
     boolean isEmpty() {
-        if (index == 0) {
+        if (size == 0) {
             return true;
         }
         return false;
     }
 
     private boolean isFull() {
-        if (index == size) {
+        if (size == capacity) {
             return true;
         }
         return false;
     }
 
     public int size() {
-     return index;
+     return size;
     }
 }
