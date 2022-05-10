@@ -1,11 +1,11 @@
-package stack_queue;
+package stack_queue.stack_array;
 
-public class Stack {
+public class MyStack {
     private int arr[];
     private int capacity;
     int size = 0;
 
-    public Stack(int capacity) {
+    public MyStack(int capacity) {
         this.capacity = capacity;
         arr = new int[capacity];
     }
