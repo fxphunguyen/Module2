@@ -1,5 +1,7 @@
 package danh_sach.method_arraylist;
 
+import java.util.Arrays;
+
 public class MyList<E> {
     int size = 0;
     static final int DEFAULT_CAPACITY = 10;
@@ -18,7 +20,6 @@ public class MyList<E> {
             elements[i] = elements[i - 1];
         elements[index] = element;
         size++;
-
     }
 
     private void checkIndex(int index) {
@@ -43,14 +44,14 @@ public class MyList<E> {
         return this.size;
     }
 
-    @Override
-    public MyList clone() {
-        MyList<E> clone = new MyList<E>(elements.length);
-        for (E e : (E[]) elements) {
-            clone.add(e);
-        }
-        return clone;
-    }
+//    @Override
+//    public MyList clone() {
+//        MyList<E> clone = new MyList<E>(elements.length);
+//        for (E e : (E[]) elements) {
+//            clone.add(e);
+//        }
+//        return clone;
+//    }
 
     public boolean contains(E o) {
         for (int i = 0; i < size; i++)
@@ -66,16 +67,18 @@ public class MyList<E> {
     }
 
     public boolean add(E e) {
-
             return false;
     }
 
-    public void ensureCapacity(int minCapacity) {
+    public void ensureCapacity() {
+        int newSize = elements.length * 2;
+        elements = Arrays.copyOf(elements, newSize);
 
     }
 
     public int lastIndexOf(E o) {
-        for (int i = size - 1; i >= 0; i--) if (o.equals(elements[i])) return i;
+        for (int i = size - 1; i >= 0; i--)
+            if (o.equals(elements[i])) return i;
         return -1;
     }
 
