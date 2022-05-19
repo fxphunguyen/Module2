@@ -25,11 +25,9 @@ public class MyLinkedList {
     public void add(int index, Object data) {
         Node temp = head;
         Node holder;
-
-        for (int i = 0; i < index - 1 && temp.next != null; i++) {
+        for (int i = 0; i < index - 1; i++) {
             temp = temp.next;
         }
-
         holder = temp.next;
         temp.next = new Node(data);
         temp.next.next = holder;
@@ -37,29 +35,32 @@ public class MyLinkedList {
     }
 
     public void addFirst(Object data) {
-        Node temp = head;
+       Node temp = head;
         head = new Node(data);
         head.next = temp;
         numNode++;
     }
 
     public void addLast(Object data) {
-        if (head == null)
+        if (head == null) {
             addFirst(data);
-        else {
+        } else {
             Node temp = head;
-            while (temp.next != null) temp = temp.next;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
             temp.next = new Node(data);
         }
+        numNode++;
+
     }
 
-    public void remove(int index) {
-        Node temp = head;
-
-        for (int i = 0; i < index - 1 && temp.next != null; i++) {
-            temp.next = temp.next.next;
+    public void remove(int index ) {
+       Node temp = head;
+        for (int i = 0; i < index - 1; i++) {
+            temp = temp.next;
         }
-
+        temp.next = temp.next.next;
         numNode--;
     }
 
@@ -85,8 +86,7 @@ public class MyLinkedList {
             if ((temp.data).equals(data)) {
                 flag = true;
                 break;
-            }
-            else {
+            } else {
                 flag = false;
                 temp = temp.next;
             }
@@ -101,8 +101,7 @@ public class MyLinkedList {
             if ((temp.data).equals(data)) {
                 q = i;
                 break;
-            }
-            else {
+            } else {
                 temp = temp.next;
             }
         }
