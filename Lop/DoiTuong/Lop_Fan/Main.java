@@ -1,7 +1,5 @@
 package Lop.DoiTuong.Lop_Fan;
 
-import javax.sound.midi.Soundbank;
-
 public class Main {
     public static void main(String[] args) {
         Fan Fan1 = new Fan();

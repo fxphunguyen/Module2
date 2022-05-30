@@ -11,7 +11,7 @@ public class Count_Student_Passing {
             System.out.println("Nhập số lượng học sinh: ");
             size = scanner.nextInt();
             if (size > 30) {
-                System.out.println("Size should not exceed 30");
+                System.out.println("Số lượng không được quá 30");
             }
         } while (size > 30);
         arr = new int[size];
@@ -23,9 +23,9 @@ public class Count_Student_Passing {
         }
         int count = 0;
         System.out.println("Danh sách điểm: ");
-        for (int j = 0; j < arr.length; j++) {
-            System.out.println(arr[j] + "\t");
-            if (arr[j] >= 5 && arr[j] <= 10)
+        for (int k : arr) {
+            System.out.println(k + "\t");
+            if (k >= 5 && k <= 10)
                 count++;
         }
         System.out.println("\n Số học sinh đủ điểm là " + count);
