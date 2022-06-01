@@ -8,7 +8,7 @@ public class Reverse_Array {
         int[] array;
         Scanner scanner = new Scanner(System.in);
         do {
-            System.out.print("Enter a size");
+            System.out.println("Enter a size: ");
             size = scanner.nextInt();
             if (size > 20)
                 System.out.println("Size does not exceed 20");
@@ -16,13 +16,13 @@ public class Reverse_Array {
         array = new int[size];
         int i = 0;
         while (i < array.length){
-            System.out.print("Enter elemen" + (i + 1) + ":");
+            System.out.print("Enter elemen " + (i + 1) + ": ");
             array[i] = scanner.nextInt();
             i++;
         }
         System.out.printf("%-20s%s", "Elemens in array", "");
-        for (int j = 0; j < array.length; j++){
-            System.out.print(array[j] + "\t");
+        for (int k : array) {
+            System.out.print(k + "\t");
         }
         for (int j = 0; j < array.length / 2; j++) {
             int temp = array[j];
@@ -30,8 +30,8 @@ public class Reverse_Array {
             array[size - 1 - j] = temp;
         }
         System.out.printf("\n%-20s%s", "Reverse array: ", "");
-        for (int j = 0; j < array.length; j++) {
-            System.out.print(array[j] + "\t");
+        for (int k : array) {
+            System.out.print(k + "\t");
         }
     }
 }

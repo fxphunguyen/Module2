@@ -3,6 +3,7 @@ package Mang;
 public class Check_Number {
    public static void main(String[] args) {
        System.out.println("Gia tri lon nhat la: "+ checkNumber() );
+       
    }
 
     public static int checkNumber(){
