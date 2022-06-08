@@ -8,12 +8,12 @@ public class Kiemtrasonguyento {
         System.out.print("Nhập number: ");
         int number = scanner.nextInt();
         System.out.printf("%d Số nguyên tố nhỏ hơn là: \n", number);
-        int dem = 0;
+        int count = 0;
         int i = 2;
-        while (dem < number){
+        while (count < number){
             if (findPrime(i)){
                 System.out.print(i + " ");
-                dem++;
+                count++;
             }
             i++;
         }
