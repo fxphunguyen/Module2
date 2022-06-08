@@ -1,8 +1,8 @@
 package Thuat_Toan;
 
 public class Insertion_Sort {
-    public static void main(String args[]) {
-        int arr[] = {2, 5, 20, 15, 17, 13};
+    public static void main(String[] args) {
+        int[] arr = {2, 5, 20, 15, 17, 13};
         System.out.println("Mảng ban đầu:" );
         printArray(arr);
         insertionSort(arr);
@@ -26,7 +26,7 @@ public class Insertion_Sort {
 //        }
 //    }
 
-    public static void insertionSort(int arr[]){
+    public static void insertionSort(int[] arr){
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];
             for(int j=i-1; j>=0; j--){
@@ -38,9 +38,9 @@ public class Insertion_Sort {
         }
     }
     // In các phần tử của mảng
-    static void printArray(int arr[]) {
-        for (int i = 0; i < arr.length; ++i)
-            System.out.print(arr[i] + " ");
+    static void printArray(int[] arr) {
+        for (int j : arr)
+            System.out.print(j + " ");
 
         System.out.println();
     }

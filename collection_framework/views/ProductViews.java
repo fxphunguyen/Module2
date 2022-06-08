@@ -4,7 +4,6 @@ import collection_framework.Product;
 import collection_framework.service.IProductService;
 import collection_framework.service.ProductService;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

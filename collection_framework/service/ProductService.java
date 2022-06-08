@@ -32,8 +32,7 @@ public class ProductService implements IProductService {
 
     @Override
     public void update(Product newProduct) {
-//ong co viet gi trong nay đâu
-        //em có viết mà viết không được :))
+
         for (Product p : productList) {
             if (p.getId() == newProduct.getId()) {
                 String name = newProduct.getName();
@@ -44,8 +43,7 @@ public class ProductService implements IProductService {
                     double price = newProduct.getPrice();
                     p.setPrice(price);
                 }
-                //tu cap nhat vo di
-                //ook anh em cam on ajjjjj
+
             }
         }
     }

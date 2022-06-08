@@ -22,12 +22,11 @@ public class drawing_menu {
             switch (choice){
                 case 1:
                     System.out.println("Draw the triangle");
-                    System.out.println("******");
-                    System.out.println("*****");
-                    System.out.println("****");
-                    System.out.println("***");
-                    System.out.println("**");
-                    System.out.println("*");
+                    System.out.println("********");
+                    System.out.println(" ******");
+                    System.out.println("  ****");
+                    System.out.println("   **");
+                    System.out.println("    *");
                     break;
                 case 2:
                     System.out.println("Draw the square");
