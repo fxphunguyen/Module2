@@ -3,7 +3,7 @@ package danh_sach.method_arraylist;
 public class MyListTest {
     public static void main(String[] args) {
         MyList<String> listNames = new MyList<>(10);
-        listNames.add(5,"a");
+        listNames.add(1,"a");
         listNames.add(4,"Tài smile");
         listNames.add(0,"c");
         listNames.add(2,"d");
@@ -11,6 +11,7 @@ public class MyListTest {
         //listNames.clear();
         listNames.printMyList();
         System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+        System.out.println(listNames.size());
         listNames.remove(3);
         listNames.printMyList();
 

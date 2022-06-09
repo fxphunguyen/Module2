@@ -1,29 +1,25 @@
 package Thuat_Toan;
 
 public class BubbleSort {
-    static int [] list = {3,6,91,-2,4,6,7};
+    static int[] arr = {3, 6, 91, -2, 4, 7};
 
-    public static void bubbleSort(int[] list) {
-        boolean needNextPass = true;
-
-        for (int k = 1; k < list.length && needNextPass; k++) {
-            needNextPass = false;
-            for (int i = 0; i < list.length - k; i++) {
-                if (list[i] > list[i + 1]) {
-                    int temp = list[i];
-                    list[i] = list[i + 1];
-                    list[i + 1] = temp;
-
-                    needNextPass = true;
+    public static void bubbleSort(int[] arr) {
+       int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
     }
 
     public static void main(String[] args) {
-        bubbleSort(list);
-        for (int i = 0; i < list.length; i++) {
-            System.out.println(list[i] + "");
+        bubbleSort(arr);
+        for (int item : arr) {
+            System.out.println(item);
         }
     }
 }

@@ -1,27 +1,24 @@
 package Thuat_Toan;
 
 public class SelectionSort {
-    static int[] list = {1, 5, 9, 3, 4, 3};
+    static int[] arr = {3, 5, 9, 2, 4, 1};
 
-    public static void selectionSort(int[] list) {
-        for (int i = 0; i < list.length - 1; i++) {
-            int currentMin = list[i];
-            int currentMinIndex = i;
-            for (int j = i + 1; j < list.length; j++) {
-                if (currentMin > list[j]) {
-                    currentMin = list[j];
-                    currentMinIndex = j;
-                }
-            }
-            if (currentMinIndex != i) {
-                list[currentMinIndex] = list[i];
-                list[i] = currentMin;
-            }
+    public static void selectionSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < n; j++)
+                if (arr[j] < arr[min])
+                min = j;
+            int temp = arr[min];
+            arr[min] = arr[i];
+            arr[i] = temp;
         }
     }
+
     public static void main(String[] args) {
-        selectionSort(list);
-        for (int i = 0; i < list.length; i++)
-            System.out.print(list[i] + " ");
+        selectionSort(arr);
+        for (int i = 0; i < arr.length; i++)
+            System.out.print(arr[i] + " ");
     }
 }
