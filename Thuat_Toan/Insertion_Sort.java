@@ -1,8 +1,10 @@
 package Thuat_Toan;
 
+import java.util.Arrays;
+
 public class Insertion_Sort {
     public static void main(String[] args) {
-        int[] arr = {2, 5, 20, 15, 17, 13};
+        int[] arr = {90, 5, 20, 15, 17, 13};
         System.out.println("Mảng ban đầu:");
         printArray(arr);
         insertionSort(arr);
@@ -35,6 +37,7 @@ public class Insertion_Sort {
                     arr[j] = temp;
                 }
             }
+            System.out.println(Arrays.toString(arr));
         }
     }
 
