@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MyList<E> {
     int size = 0;
     static final int DEFAULT_CAPACITY = 10;
-    Object elements[];
+    Object[] elements;
 
     MyList() {
         elements = new Object[DEFAULT_CAPACITY];
@@ -16,8 +16,8 @@ public class MyList<E> {
     }
 
     public void add(int index, E element) {
-        for (int i = size; i < size; i--) {
-            elements[i] = elements[i - 1];
+        for (int i = 0; i < size; i++) {
+            elements[i] = elements[i + 1];
             elements[index] = element;
             size++;
         }

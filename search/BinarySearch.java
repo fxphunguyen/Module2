@@ -4,7 +4,7 @@ public class BinarySearch {
     static int[] arr = {2, 4, 7, 10, 11, 45};
 
     static int binarySearch(int[] arr, int key) {
-        int left = 0;
+       int left = 0;
         int right = arr.length - 1;
         while (right >= left) {
             int mid = (left + right) / 2;
@@ -22,8 +22,6 @@ public class BinarySearch {
     public static void main(String[] args) {
         System.out.println(binarySearch(arr, 50));
         System.out.println(binarySearch(arr, 11));
-        System.out.println(binarySearch(arr, 90));
-
     }
 }
 
