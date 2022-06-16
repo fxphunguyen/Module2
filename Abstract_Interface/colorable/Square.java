@@ -1,6 +1,6 @@
 package Abstract_Interface.colorable;
 
-import Ke_Thua.Learning_Geometry.Rectangle;
+import ke_thua.Learning_Geometry.Rectangle;
 
 public class Square extends Rectangle implements Colorable{
     public Square() {

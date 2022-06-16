@@ -1,6 +1,6 @@
 package Abstract_Interface.Comparators;
 
-import Ke_Thua.Learning_Geometry.Shape;
+import ke_thua.Learning_Geometry.Shape;
 
 public class Circle extends Shape {
     private double radius = 1.0;
