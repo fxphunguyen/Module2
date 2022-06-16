@@ -1,5 +1,3 @@
-package vongLap;
-
 import java.util.Scanner;
 
 public class interest_calculator {
