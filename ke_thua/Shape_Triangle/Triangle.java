@@ -1,9 +1,11 @@
 package ke_thua.Shape_Triangle;
 
-public class Triangle extends Shape{
+public class Triangle extends Shape {
     private double side1 = 1;
     private double side2 = 1;
     private double side3 = 1;
+    double P;
+    double S;
 
     Triangle() {
     }
@@ -38,4 +40,22 @@ public class Triangle extends Shape{
         this.side3 = side3;
     }
 
+    public double getArea() {
+        return S = Math.sqrt(getPerimeter() * (getPerimeter() - side1) * (getPerimeter() - side2) * (getPerimeter() - side3));
+    }
+
+    public double getPerimeter() {
+        return P = (side1 + side2 + side3) / 2;
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "side1 = " + side1 +
+                ", side2 = " + side2 +
+                ", side3 = " + side3 +
+                ", P = " + P +
+                ", S = " + S +
+                '}';
+    }
 }
