@@ -1,10 +1,10 @@
-package demo;
+package demo.test;
 
 import javax.swing.*;
 
 public class GuessingGame {
     public static void main(String[] args) {
-        int computerNumber = (int) (Math.random() * 100 + 1);
+        int computerNumber = (int) (Math.random() * 100 );
         int userAnswer = 0;
         System.out.println("Đáp án chính xác là: " + computerNumber);
         int count = 1;
@@ -28,5 +28,7 @@ public class GuessingGame {
         } else {
             return "Dự đoán của bạn thấp hơn so với kết quả. \n Số lần đoán: " + count;
         }
+
     }
 }
+

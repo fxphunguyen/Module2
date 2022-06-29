@@ -16,11 +16,16 @@ public class MyList<E> {
     }
 
     public void add(int index, E element) {
-        for (int i = 0; i < size; i++) {
-            elements[i] = elements[i + 1];
-            elements[index] = element;
-            size++;
+//        ensureCapacity();
+//        for (int i = 0; i > size; i--) {
+//            elements[i] = elements[i - 1];
+//        }
+//        elements[index] = element;
+//        size++;
+        if (size == elements.length) {
+            ensureCapacity();
         }
+        elements[size++] = element;
     }
 
     private void checkIndex(int index) {

@@ -5,9 +5,9 @@ public class MyLinkedList {
     private int numNode;
     private boolean flag;
 
-    public class Node {
+    public static class Node {
         private Node next;
-        private Object data;
+        private final Object data;
 
         public Node(Object data) {
             this.data = data;
@@ -25,7 +25,7 @@ public class MyLinkedList {
     public void add(int index, Object data) {
         Node temp = head;
         Node holder;
-        for (int i = 0; i < index - 1; i++) {
+        for (int i = 0; i < index - 1 && temp.next != null; i++) {
             temp = temp.next;
         }
         holder = temp.next;
@@ -35,7 +35,7 @@ public class MyLinkedList {
     }
 
     public void addFirst(Object data) {
-       Node temp = head;
+        Node temp = head;
         head = new Node(data);
         head.next = temp;
         numNode++;
@@ -55,8 +55,8 @@ public class MyLinkedList {
 
     }
 
-    public void remove(int index ) {
-       Node temp = head;
+    public void remove(int index) {
+        Node temp = head;
         for (int i = 0; i < index - 1; i++) {
             temp = temp.next;
         }
