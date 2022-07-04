@@ -18,14 +18,14 @@ public class ProductViews {
         int id = Integer.parseInt(scanner.nextLine());
         if (productService.existById(id)) {
             System.out.println("id đã tồn tại!");
-        }else {
+        } else {
             System.out.println("Nhập tên sản phẩm: ");
             System.out.print(" + ");
-            String  name= scanner.nextLine();
+            String name = scanner.nextLine();
             System.out.println("Nhập giá của sản phẩm: ");
             System.out.print(" + ");
             double price = Double.parseDouble(scanner.nextLine());
-            
+
             Product product = new Product(id, name, price);
             productService.add(product);
         }
@@ -43,7 +43,7 @@ public class ProductViews {
             Product product = new Product(id, name, price);
             productService.update(product);
             System.out.println("Cập nhật thành công");
-        }else {
+        } else {
             System.out.println("Sản phẩm không có!");
         }
     }
@@ -67,7 +67,8 @@ public class ProductViews {
         }
 
     }
-    public void displayProduct(List<Product> productList){
+
+    public void displayProduct(List<Product> productList) {
         System.out.println("----------------ProductList------------------");
         System.out.printf("%-10s %-20s %-20s\n", "ID", "Tên sản phẩm", "Giá sản phẩm");
         for (Product product : productList) {
@@ -100,7 +101,7 @@ public class ProductViews {
                     seachProduct();
                     break;
                 case 4:
-                       removeProduct();
+                    removeProduct();
                     break;
                 case 5:
                     displayProduct(productService.printAll());

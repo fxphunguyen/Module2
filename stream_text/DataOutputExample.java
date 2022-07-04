@@ -12,8 +12,8 @@ public class DataOutputExample {
 
             dos.writeInt(100);
             dos.writeDouble(9.5);
-        //    dos.writeChars("hahaha,j,k");
-        //    dos.writeBoolean(true);
+            dos.writeChars("hahaha,j,k");
+            dos.writeBoolean(true);
 
             fos.close();
             dos.close();

@@ -17,6 +17,5 @@ public class Number {
         }
 
         System.out.println(str);
-
     }
 }
